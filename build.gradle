@@ -26,4 +26,14 @@ test {
     }
 
     useJUnitPlatform()
+
+    finalizedBy jacocoTestReport
+
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+        html.required = false
+    }
 }
